@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Client-side Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Weather</h1>
+
+    <form id="search-form" class="controls">
+      <input id="city-input" type="search" placeholder="Enter city name" aria-label="Search city" />
+      <button type="submit">Search</button>
+      <button type="button" id="loc-btn">Use my location</button>
+    </form>
+
+    <div class="prefs">
+      <label>Units:
+        <select id="units-select">
+          <option value="metric">Metric (°C)</option>
+          <option value="imperial">Imperial (°F)</option>
+        </select>
+      </label>
+    </div>
+
+    <section id="result" class="result empty">
+      <p class="hint">Search for a city or use your location to see the weather.</p>
+    </section>
+
+    <section class="favorites">
+      <h2>Favorites</h2>
+      <ul id="favorites-list"></ul>
+    </section>
+
+    
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

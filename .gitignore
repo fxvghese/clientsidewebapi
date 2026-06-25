@@ -1,0 +1,6 @@
+# Ignore local config containing API keys (removed in this project)
+# If you later add a local `config.js` for secrets, keep it here.
+
+# Optional
+node_modules/
+.DS_Store
